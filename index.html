@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Besnik</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  
+    <section id="first-section"></section> 
+    <section id="partners"></section> 
+    <section id="how-it-works"></section> 
+    <section id="properties"></section> 
+    <section id="neighborhood"></section> 
+    <section id="properties-banner"></section>
+    <footer id="footer"></footer> 
+
+    <script>
+      const fetchComponent = (path, targetElementId) => {
+        fetch(path)
+          .then((response) => response.text())
+          .then(
+            (content) =>
+              (document.getElementById(targetElementId).innerHTML = content)
+          );
+      };
+  
+        fetchComponent("/components/firstSection.html", "first-section"),
+        fetchComponent("/components/partnersSection.html", "partners"),
+        fetchComponent("/components/howItWorks.html", "how-it-works"),
+        fetchComponent("/components/properties.html", "properties"),
+        fetchComponent("/components/neighborhood.html", "neighborhood"),
+        fetchComponent("/components/propertiesBanner.html", "properties-banner"),
+        fetchComponent("/components/footer.html", "footer")
+    </script>
+  </body>
+</html>

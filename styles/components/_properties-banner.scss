@@ -1,0 +1,39 @@
+.properties-banner {
+  padding: 36px 0 105px;
+
+  &__wrapper {
+    background: $color-blue-50;
+    border-radius: 20px;
+    height: 370px;
+    color: #fff;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__phone-img {
+    position: absolute;
+    top: -36px;
+    right: 221px;
+    width: 218px;
+  }
+
+  &__title {
+    @include section-title;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(#fff, 0.75);
+    margin-bottom: 20px;
+  }
+
+  &__text-holder {
+    max-width: 50%;
+  }
+}
