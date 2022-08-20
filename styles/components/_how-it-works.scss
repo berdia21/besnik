@@ -4,6 +4,10 @@
   padding-top: 60px;
   margin-bottom: 120px;
 
+  @include upto-lg {
+    margin-bottom: 60px;
+  }
+
   &__title-wrapper {
     display: flex;
     flex-direction: column;
@@ -40,6 +44,11 @@
     display: flex;
     justify-content: space-evenly;
     margin: 70px 0 50px;
+
+    @include upto-lg {
+      margin: 40px 0 30px;
+      justify-content: space-between;
+    }
   }
 
   &__guide {
@@ -63,6 +72,11 @@
     font-weight: 500;
     color: $color-gray-70;
     margin-bottom: 10px;
+
+    @include upto-md {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
   }
 
   &__guide-btn {

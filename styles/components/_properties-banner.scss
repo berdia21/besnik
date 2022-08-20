@@ -10,6 +10,20 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    @include upto-xl {
+      height: 320px;
+      padding: 50px;
+    }
+
+    @include upto-lg {
+      height: 290px;
+    }
+
+    @include upto-md {
+      height: auto;
+      padding: 40px;
+    }
   }
 
   &__phone-img {
@@ -17,6 +31,24 @@
     top: -36px;
     right: 221px;
     width: 218px;
+
+
+    @include upto-xl {
+      right: 150px;
+      width: 191px;
+    }
+
+    @include upto-lg {
+      right: 50px;
+      width: 175px;
+    }
+
+    @include upto-md {
+      width: 70px;
+      right: 40px;
+      top: auto;
+      bottom: 0;
+    }
   }
 
   &__title {
@@ -24,6 +56,10 @@
     color: #fff;
     margin-bottom: 15px;
     margin-top: 0;
+
+    @include upto-xl {
+      font-size: 26px;
+    }
   }
 
   &__subtitle {
@@ -31,9 +67,21 @@
     line-height: 30px;
     color: rgba(#fff, 0.75);
     margin-bottom: 20px;
+
+    @include upto-xl {
+      font-size: 14px;
+    }
   }
 
   &__text-holder {
     max-width: 50%;
+
+    @include upto-lg {
+      max-width: 60%;
+    }
+
+    @include upto-md {
+      max-width: none;
+    }
   }
 }

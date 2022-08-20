@@ -1,13 +1,36 @@
 .footer {
   margin-bottom: 58px;
 
+  @include upto-xl {
+    margin-bottom: 40px;
+  }
+
   &__cols-wrapper {
     margin-bottom: 80px;
     display: flex;
+
+    @include upto-xl {
+      margin-bottom: 40px;
+    }
+
+    @include upto-md {
+      flex-wrap: wrap;
+    }
+
   }
 
   &__column {
     width: 25%;
+
+    @include upto-lg {
+      padding-right: 15px;
+    }
+
+    @include upto-md {
+      width: 50%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 
   &__column-title {
@@ -16,6 +39,14 @@
     font-weight: 700;
     color: $color-dark;
     margin-bottom: 42px;
+
+    @include upto-xl {
+      margin-bottom: 25px;
+    }
+
+    @include upto-lg {
+      margin-bottom: 15px;
+    }
   }
 
   &__column-items {
@@ -36,6 +67,18 @@
         &:hover {
           color: darken($color-gray-15, 20%)
         }
+
+        @include upto-lg {
+          font-size: 14px;
+        }
+      }
+
+      @include upto-xl {
+        margin: 0 0 10px;
+      }
+
+      @include upto-lg {
+        margin: 0 0 5px;
       }
     }
   }
@@ -44,11 +87,23 @@
     color: $color-gray-15;
     font-size: 16px;
     line-height: 28px;
+
+    @include upto-lg {
+      font-size: 14px;
+    }
   }
 
   &__socials {
     margin-top: 40px;
     display: flex;
+
+    @include upto-lg {
+      margin-top: 20px;
+    }
+
+    @include upto-md {
+      justify-content: center;
+    }
   }
 
   &__social {
@@ -74,30 +129,34 @@
       max-width: 11px;
     }
 
-    &:hover {
-      img {
-        filter: brightness(100);
+
+
+    @include lg-up {
+      &:hover {
+        img {
+          filter: brightness(100);
+        }
+
+        box-shadow: 0 4px 12px -4px rgba(#555, 0.4);
+        transform: translateY(-3px);
       }
 
-      box-shadow: 0 4px 12px -4px rgba(#555, 0.4);
-      transform: translateY(-3px);
-    }
-
-    &--facebook {
-      &:hover {
-        background-color: #1778F2;
+      &--facebook {
+        &:hover {
+          background-color: #1778F2;
+        }
       }
-    }
 
-    &--twitter {
-      &:hover {
-        background-color: #1DA1F2;
+      &--twitter {
+        &:hover {
+          background-color: #1DA1F2;
+        }
       }
-    }
 
-    &--linkedin {
-      &:hover {
-        background-color: #0a66c2;
+      &--linkedin {
+        &:hover {
+          background-color: #0a66c2;
+        }
       }
     }
   }
@@ -115,5 +174,9 @@
   &__rights {
     color: #C2C2C2;
     line-height: 21px;
+
+    @include upto-lg {
+      font-size: 12px;
+    }
   }
 }
