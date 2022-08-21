@@ -47,6 +47,10 @@
   @include upto-lg {
     font-size: 30px;
   }
+
+  @include upto-sm {
+    font-size: 26px;
+  }
 }
 
 // Media mixins

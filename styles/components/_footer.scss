@@ -5,6 +5,10 @@
     margin-bottom: 40px;
   }
 
+  @include upto-sm {
+    margin-bottom: 20px;
+  }
+
   &__cols-wrapper {
     margin-bottom: 80px;
     display: flex;
@@ -17,6 +21,9 @@
       flex-wrap: wrap;
     }
 
+    @include upto-sm {
+      margin-bottom: 20px;
+    }
   }
 
   &__column {
@@ -31,6 +38,10 @@
       margin-bottom: 40px;
       text-align: center;
       padding: 0 15px;
+    }
+
+    @include upto-sm {
+      width: 100%;
     }
   }
 
@@ -166,10 +177,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include upto-sm {
+      flex-direction: column;
+      justify-content: center;
+    }
+
   }
 
   &__logo {
     height: 24px;
+
+    @include upto-sm {
+      margin-bottom: 20px;
+    }
   }
 
   &__rights {

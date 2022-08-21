@@ -31,6 +31,10 @@
     @include upto-lg {
       font-size: 14px;
     }
+
+    @include upto-sm {
+      font-size: 12px;
+    }
   }
 
   &__rating {
@@ -79,6 +83,12 @@
 
           img {
             max-height: 30px;
+          }
+        }
+
+        @include upto-sm {
+          img {
+            max-height: 22px;
           }
         }
       }

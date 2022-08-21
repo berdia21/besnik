@@ -38,6 +38,11 @@
     text-align: center;
     max-width: 460px;
     font-weight: 400;
+
+    @include upto-sm {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__guides-wrapper {
@@ -48,6 +53,11 @@
     @include upto-lg {
       margin: 40px 0 30px;
       justify-content: space-between;
+    }
+
+    @include upto-sm {
+      flex-direction: column;
+      margin: 40px 0 0;
     }
   }
 
@@ -63,6 +73,14 @@
       max-width: 48px;
       max-height: 48px;
       margin-bottom: 26px;
+
+      @include upto-sm {
+        margin-bottom: 15px;
+      }
+    }
+
+    @include upto-sm {
+      margin-bottom: 30px;
     }
   }
 

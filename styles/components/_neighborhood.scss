@@ -5,6 +5,10 @@
     padding: 60px 0 80px;
   }
 
+  @include upto-sm {
+    padding: 60px 0 20px;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +43,10 @@
     @include upto-xl {
       width: 340px;
     }
+
+    @include upto-sm {
+      width: 100%;
+    }
   }
 
   &__card {
@@ -62,6 +70,12 @@
       top: 50%;
       transform: translateY(-50%);
       border-radius: 12px;
+    }
+
+    @include upto-sm {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
     }
   }
 
@@ -172,6 +186,12 @@
     font-size: 16px;
     line-height: 30px;
     color: $color-gray-40;
+
+    @include upto-sm {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
   }
 
   &__numbers {
@@ -183,6 +203,17 @@
 
     @include upto-lg {
       margin-top: 55px;
+    }
+
+    @include upto-sm {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  }
+
+  &__number {
+    @include upto-sm {
+      margin-bottom: 40px;
     }
   }
 
@@ -200,6 +231,10 @@
     @include upto-md {
       font-size: 36px;
       margin-bottom: 7px
+    }
+
+    @include upto-sm {
+      text-align: center
     }
   }
 

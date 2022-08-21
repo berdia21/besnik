@@ -25,6 +25,10 @@
       background-color: lighten($color-blue-80, 10%)
     }
 
+    @include upto-sm {
+      padding: 10px;
+    }
+
     &--large {
       height: 50px;
       padding: 10px 37px;

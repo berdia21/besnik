@@ -49,6 +49,10 @@
       top: auto;
       bottom: 0;
     }
+
+    @include upto-md {
+      display: none
+    }
   }
 
   &__title {

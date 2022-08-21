@@ -32,6 +32,11 @@
     font-size: 16px;
     line-height: 30px;
     color: $color-gray-40;
+
+    @include upto-sm {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__view-all-cta {
@@ -41,6 +46,11 @@
 
     @include upto-xl {
       font-size: 16px;
+    }
+
+    @include upto-sm {
+      font-size: 14px;
+      line-height: 22px;
     }
 
     @include upto-lg {
@@ -98,6 +108,10 @@
       width: 70%;
       margin: 0 0 30px !important;
     }
+
+    @include upto-sm {
+      width: 100%;
+    }
   }
 
   &__card-img {
@@ -111,6 +125,10 @@
 
     @include upto-md {
       height: 50vw;
+    }
+
+    @include upto-sm {
+      height: 68vw;
     }
   }
 
