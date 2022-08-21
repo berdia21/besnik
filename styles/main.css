@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /**
@@ -313,7 +314,7 @@ a {
 
 * {
   box-sizing: border-box;
-  outline: none;
+  outline: none !important;
 }
 
 html {
@@ -458,6 +459,7 @@ ol {
 .first-section {
   padding: 38px 0 0;
   background-color: #E6F0FF;
+  overflow-x: hidden;
 }
 @media (max-width: calc(991px - 1px)) {
   .first-section {
@@ -655,12 +657,13 @@ ol {
 .first-section__mobile-menu {
   display: none;
   background-color: #E6F0FF;
-  width: 100vw;
+  width: 0;
   position: absolute;
   left: 100%;
   top: 70px;
   transition: all 0.4s ease-in-out;
   opacity: 0;
+  overflow: hidden;
 }
 @media (max-width: calc(991px - 1px)) {
   .first-section__mobile-menu {
@@ -693,8 +696,8 @@ ol {
   opacity: 0;
   cursor: pointer;
   position: absolute;
-  right: 0;
-  top: 5px;
+  right: 15px;
+  top: -45px;
 }
 #menu-toggle:checked ~ .first-section__burger-holder .first-section__burger {
   opacity: 0;
@@ -714,6 +717,7 @@ ol {
   left: 0;
   box-shadow: 0 20px 30px 0px rgba(85, 85, 85, 0.1);
   opacity: 1;
+  width: 100vw;
 }
 
 .partners-section {
@@ -1435,6 +1439,7 @@ ol {
     width: 50%;
     margin-bottom: 40px;
     text-align: center;
+    padding: 0 15px;
   }
 }
 .footer__column-title {
