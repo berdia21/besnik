@@ -197,6 +197,16 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+label {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -205,7 +215,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: none;
 }
 
 /**

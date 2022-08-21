@@ -1,10 +1,14 @@
 .first-section {
   padding: 38px 0 0;
   background-color: $color-blue-10;
-  overflow-x: hidden;
+
 
   @include upto-lg {
     padding: 20px 0 0;
+  }
+
+  @include upto-md {
+    overflow-x: hidden;
   }
 
   @include upto-sm {

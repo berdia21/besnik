@@ -179,6 +179,15 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+label {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -186,7 +195,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: none;
 }
 
 /**
@@ -464,11 +473,15 @@ ol {
 .first-section {
   padding: 38px 0 0;
   background-color: #E6F0FF;
-  overflow-x: hidden;
 }
 @media (max-width: calc(991px - 1px)) {
   .first-section {
     padding: 20px 0 0;
+  }
+}
+@media (max-width: calc(768px - 1px)) {
+  .first-section {
+    overflow-x: hidden;
   }
 }
 @media (max-width: calc(575px - 1px)) {
